@@ -1,10 +1,9 @@
-.blogpageitems{padding-left: 20px; padding-right: 20px;padding-top: 5px;}
+.blogpageitems, .homepageitems, .b1MAT102{padding-left: 20px; padding-right: 20px;padding-top: 5px;}
 
-.homepageitems{padding-left: 20px; padding-right: 20px;padding-top: 5px;}
+h1, h2{color: antiquewhite;font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-h1{color: antiquewhite;font-family: Verdana, Geneva, Tahoma, sans-serif;}
-
-p{color: antiquewhite;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+p, ul{color: antiquewhite;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+a{color: white;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 
 .topnav{overflow: hidden;background-color: rgb(0, 1, 2);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
 
