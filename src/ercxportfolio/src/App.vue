@@ -1,14 +1,15 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">About</RouterLink>
-        <RouterLink to="/about">Projects</RouterLink>
+        <RouterLink to="/">About me</RouterLink>
+        <RouterLink to="/about">Things I made</RouterLink>
+        <RouterLink to="/blog">Things I wrote</RouterLink>
+        <RouterLink to="/hobby">Things you don't care about</RouterLink>
       </nav>
     </div>
   </header>
@@ -17,56 +18,40 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
-
 nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: white;
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  font-size: 1rem;
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid var(--color-border);
 }
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
 }
 
-nav a:first-of-type {
-  border: 0;
+nav a:hover {
+  color: var(--color-accent);
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+nav a.router-link-exact-active {
+  color: var(--color-accent);
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 </style>
