@@ -1,5 +1,26 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { onMounted, onBeforeUnmount } from 'vue'
+
+onMounted(() => {
+  const nav = document.querySelector('nav')
+  if (nav) {
+    nav._wheelHandler = function(e) {
+      if (e.deltaY !== 0) {
+        e.preventDefault()
+        nav.scrollLeft += e.deltaY
+      }
+    }
+    nav.addEventListener('wheel', nav._wheelHandler, { passive: false })
+  }
+})
+
+onBeforeUnmount(() => {
+  const nav = document.querySelector('nav')
+  if (nav && nav._wheelHandler) {
+    nav.removeEventListener('wheel', nav._wheelHandler)
+  }
+})
 </script>
 
 <template>
@@ -36,6 +57,9 @@ nav {
   border-bottom: 1px solid var(--color-border);
   --navbar-height: clamp(32px, calc(160px - 10vw), 340px);
   height: var(--navbar-height);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
 }
 
 nav a {
