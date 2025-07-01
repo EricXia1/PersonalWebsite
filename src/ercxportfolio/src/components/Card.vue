@@ -70,7 +70,6 @@ h3 {
 
 p {
   margin: 0 0 1rem 0;
-  opacity: 0.8;
 }
 
 .technologies {
