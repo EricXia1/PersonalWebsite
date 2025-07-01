@@ -10,6 +10,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/about">Things I made</RouterLink>
         <RouterLink to="/blog">Things I wrote</RouterLink>
         <RouterLink to="/hobby">Things you don't care about</RouterLink>
+        <a href="/Eric_Xia_Resume_2025F.pdf" target="_blank" rel="noopener noreferrer">
+          Resume
+        </a>
       </nav>
     </div>
   </header>
