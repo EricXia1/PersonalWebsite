@@ -4,7 +4,7 @@ import BlogCard from '@/components/BlogCard.vue'
 const blogs = [
   {
     title:'UofT CS midpoint course review',
-    description: "Iim halfway through my Computer Science degree at the University of Toronto, and I wanted to share my thoughts on the courses I've taken so far.",
+    description: "I'm halfway through my Computer Science degree at the University of Toronto, and I wanted to share my thoughts on the courses I've taken so far.",
     tags: ['Academics'],
     link: '/blogs/midpointreview',
   }
@@ -27,7 +27,7 @@ const blogs = [
 <style scoped>
 .blog {
   min-height: 100vh;
-  padding: 6rem 2rem 2rem;
+  padding: calc(var(--navbar-height, 90px) + 2rem) 2rem 2rem;
 }
 
 h1 {

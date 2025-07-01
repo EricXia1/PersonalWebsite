@@ -8,7 +8,7 @@
 <style scoped>
 .hobby {
   min-height: 100vh;
-  padding: 6rem 2rem 2rem;
+  padding: calc(var(--navbar-height, 90px) + 2rem) 2rem 2rem;
 }
 
 h1 {

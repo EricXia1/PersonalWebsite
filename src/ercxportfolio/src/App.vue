@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/about">Things I made</RouterLink>
         <RouterLink to="/blog">Things I wrote</RouterLink>
         <RouterLink to="/hobby">Things you don't care about</RouterLink>
+        <a href="../Eric_Xia_Resume_2025F.pdf" target="_blank" rel="noopener">Resume</a>
       </nav>
     </div>
   </header>
@@ -31,6 +32,8 @@ nav {
   background-color: rgba(26, 26, 26, 0.95);
   backdrop-filter: blur(5px);
   border-bottom: 1px solid var(--color-border);
+  --navbar-height: clamp(32px, calc(160px - 10vw), 340px);
+  height: var(--navbar-height);
 }
 
 nav a {
