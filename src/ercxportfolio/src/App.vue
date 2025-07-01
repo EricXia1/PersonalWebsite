@@ -44,11 +44,11 @@ onBeforeUnmount(() => {
 <style scoped>
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   font-size: 1rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 1rem;
   position: fixed;
   top: 0;
   left: 0;
