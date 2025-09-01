@@ -8,8 +8,6 @@ const currentThings = [
   'A Third Year Student at the University of Toronto',
   'Doing a major in Computer Science',
   'Doing minors in Mathematics and Philosophy',
-  'Building software for tabi-wellbeing, and UofT',
-  'Revamping my portfolio website!',
 ];
 </script>
 
